@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Sakshanshu Kumar — B.Tech Computer Science student." />
+  <title>Sakshanshu Kumar | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader-crest">
+      <span class="loader-ring"></span>
+      <span class="loader-mark">◆</span>
+    </div>
+    <span class="loader-line"></span>
+  </div>
+
+  <!-- Scroll progress bar -->
+  <div id="progress"></div>
+
+  <!-- ================= NAVIGATION ================= -->
+  <header id="navbar">
+    <nav class="container nav">
+      <a href="#home" class="logo">Sakshanshu</a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle dark/light mode" title="Toggle theme">
+          <svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M1.5 12h3M19.5 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
+        </button>
+        <button id="menuToggle" class="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ================= HOME ================= -->
+    <section id="home" class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="sweep"></span>
+      </div>
+      <div class="container hero-inner">
+        <p class="hero-greet fade-up" style="--d:.15s">The Portfolio of</p>
+        <h1 class="hero-name fade-up" style="--d:.3s">Sakshanshu <span>Kumar</span></h1>
+        <div class="ornament fade-up" style="--d:.45s"><span></span><i>◆</i><span></span></div>
+        <p class="hero-role fade-up" style="--d:.55s">
+          <span class="typed" id="typed"></span><span class="caret">|</span>
+        </p>
+        <p class="hero-intro fade-up" style="--d:.65s">
+          A B.Tech Computer Science student who loves turning ideas into clean, working software —
+          from C++ problem solving to web pages and iOS apps.
+        </p>
+        <div class="hero-cta fade-up" style="--d:.75s">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+        </div>
+        <div class="hero-social fade-up" style="--d:.9s">
+          <a href="https://github.com/Sakshansh" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/sakshanshukumar/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.5H3.5V9h3.6v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></svg>
+          </a>
+        </div>
+      </div>
+      <a href="#about" class="scroll-down" aria-label="Scroll to About"><span></span></a>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-num">Chapter I</span>
+          <h2>About <em>Me</em></h2>
+          <div class="ornament"><span></span><i>◆</i><span></span></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-photo reveal">
+            <div class="avatar">
+              <span class="emblem">◆</span>
+            </div>
+            <div class="avatar-frame"></div>
+          </div>
+
+          <div class="about-text reveal">
+            <p>
+              I'm <strong>Sakshanshu Kumar</strong>, a Computer Science undergraduate pursuing my B.Tech.
+              Originally from <strong>Aligarh</strong>, I currently live in <strong>Ghaziabad</strong>, where
+              I spend most of my time learning how software is built — and then building it myself.
+            </p>
+            <p>
+              My foundation is in <strong>C++</strong> and <strong>Python</strong>, and I enjoy problem solving and
+              data structures. I've also explored web development with HTML, CSS and JavaScript, built a small
+              iOS app in Swift, and I'm currently learning <strong>cloud computing with AWS</strong>.
+            </p>
+            <p>
+              I believe in learning by doing: understand the concept, dry-run it, then write the code.
+              I'm looking for opportunities to grow as a developer and contribute to meaningful projects.
+            </p>
+
+            <ul class="info-list">
+              <li><span>Name</span>Sakshanshu Kumar</li>
+              <li><span>Degree</span>B.Tech, Computer Science</li>
+              <li><span>Current City</span>Ghaziabad, Uttar Pradesh</li>
+              <li><span>Hometown</span>Aligarh, Uttar Pradesh</li>
+              <li><span>Languages</span>Hindi, English</li>
+              <li><span>Interests</span>Coding, Tech, Cloud, Apps</li>
+            </ul>
+
+            <div class="stats">
+              <div class="stat"><strong class="counter" data-target="3">0</strong><span>Public Repos</span></div>
+              <div class="stat"><strong class="counter" data-target="6">0</strong><span>Technologies</span></div>
+              <div class="stat"><strong class="counter" data-target="100">0</strong><span>% Curiosity</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EDUCATION ================= -->
+    <section id="education" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-num">Chapter II</span>
+          <h2>My <em>Education</em></h2>
+          <div class="ornament"><span></span><i>◆</i><span></span></div>
+        </div>
+
+        <!-- EDIT: replace college/school names, years and scores with your own -->
+        <div class="timeline">
+          <div class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <span class="tl-date">2024 — 2028</span>
+              <h3>Bachelor of Technology — Computer Science</h3>
+              <p class="tl-place">Your College Name, Ghaziabad</p>
+              <p>Studying data structures, algorithms, object-oriented programming, mathematics and computer fundamentals.</p>
+              <span class="tl-badge">Pursuing</span>
+            </div>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <span class="tl-date">2022 — 2024</span>
+              <h3>Senior Secondary (Class XII) — PCM</h3>
+              <p class="tl-place">Your School Name, Aligarh</p>
+              <p>Physics, Chemistry and Mathematics with Computer Science.</p>
+              <span class="tl-badge">Completed</span>
+            </div>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <span class="tl-date">2021 — 2022</span>
+              <h3>Secondary (Class X)</h3>
+              <p class="tl-place">Your School Name, Aligarh</p>
+              <p>Built a strong foundation in mathematics and science.</p>
+              <span class="tl-badge">Completed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-num">Chapter III</span>
+          <h2>My <em>Skills</em></h2>
+          <div class="ornament"><span></span><i>◆</i><span></span></div>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <h3>Technical Skills</h3>
+            <div class="skill"><div class="skill-top"><span>C++</span><span>80%</span></div><div class="bar"><i data-width="80"></i></div></div>
+            <div class="skill"><div class="skill-top"><span>Python</span><span>70%</span></div><div class="bar"><i data-width="70"></i></div></div>
+            <div class="skill"><div class="skill-top"><span>HTML &amp; CSS</span><span>75%</span></div><div class="bar"><i data-width="75"></i></div></div>
+            <div class="skill"><div class="skill-top"><span>JavaScript</span><span>60%</span></div><div class="bar"><i data-width="60"></i></div></div>
+            <div class="skill"><div class="skill-top"><span>Data Structures &amp; Algorithms</span><span>65%</span></div><div class="bar"><i data-width="65"></i></div></div>
+            <div class="skill"><div class="skill-top"><span>Swift (iOS)</span><span>45%</span></div><div class="bar"><i data-width="45"></i></div></div>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3>Tools &amp; Platforms</h3>
+            <div class="chips">
+              <span>Git</span><span>GitHub</span><span>VS Code</span><span>Xcode</span>
+              <span>AWS</span><span>Jupyter</span><span>Anaconda</span><span>macOS</span><span>Terminal</span>
+            </div>
+
+            <h3 class="mt">Non-Technical Skills</h3>
+            <div class="chips soft">
+              <span>Problem Solving</span><span>Communication</span><span>Teamwork</span>
+              <span>Quick Learner</span><span>Time Management</span><span>Adaptability</span>
+              <span>Critical Thinking</span><span>Consistency</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-num">Chapter IV</span>
+          <h2>Featured <em>Projects</em></h2>
+          <div class="ornament"><span></span><i>◆</i><span></span></div>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project reveal">
+            <div class="project-top">
+              <svg class="folder" viewBox="0 0 24 24"><path d="M3 6.5A1.5 1.5 0 0 1 4.5 5H9l2 2h8.5A1.5 1.5 0 0 1 21 8.5v9a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5z"/></svg>
+              <a href="https://github.com/Sakshansh" target="_blank" rel="noopener" aria-label="GitHub">↗</a>
+            </div>
+            <h3>Personal Portfolio Website</h3>
+            <p>This responsive portfolio with a dark/light theme, scroll animations, typing effect and a JavaScript-validated contact form. Hosted on AWS.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>AWS</li></ul>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-top">
+              <svg class="folder" viewBox="0 0 24 24"><path d="M3 6.5A1.5 1.5 0 0 1 4.5 5H9l2 2h8.5A1.5 1.5 0 0 1 21 8.5v9a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5z"/></svg>
+              <a href="https://github.com/Sakshansh/DiceRoll" target="_blank" rel="noopener" aria-label="DiceRoll on GitHub">↗</a>
+            </div>
+            <h3>DiceRoll — iOS App</h3>
+            <p>A simple dice-rolling iOS app built with Swift and Xcode. Tap to roll two dice with randomised faces and a clean interface.</p>
+            <ul class="tags"><li>Swift</li><li>Xcode</li><li>iOS</li></ul>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-top">
+              <svg class="folder" viewBox="0 0 24 24"><path d="M3 6.5A1.5 1.5 0 0 1 4.5 5H9l2 2h8.5A1.5 1.5 0 0 1 21 8.5v9a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5z"/></svg>
+              <a href="https://github.com/Sakshansh/my-first-web" target="_blank" rel="noopener" aria-label="my-first-web on GitHub">↗</a>
+            </div>
+            <h3>My First Web</h3>
+            <p>My first website, built from scratch with HTML and CSS. It's where I learned page structure, styling and layout fundamentals.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li></ul>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-top">
+              <svg class="folder" viewBox="0 0 24 24"><path d="M3 6.5A1.5 1.5 0 0 1 4.5 5H9l2 2h8.5A1.5 1.5 0 0 1 21 8.5v9a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5z"/></svg>
+              <a href="https://github.com/Sakshansh" target="_blank" rel="noopener" aria-label="GitHub">↗</a>
+            </div>
+            <h3>C++ DSA Practice</h3>
+            <p>A collection of C++ programs on arrays, strings, recursion, sorting and searching, each worked through with dry runs to build strong fundamentals.</p>
+            <ul class="tags"><li>C++</li><li>DSA</li><li>Problem Solving</li></ul>
+          </article>
+        </div>
+
+        <div class="center reveal">
+          <a href="https://github.com/Sakshansh" target="_blank" rel="noopener" class="btn btn-ghost">See More on GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-num">Chapter V</span>
+          <h2>Get In <em>Touch</em></h2>
+          <div class="ornament"><span></span><i>◆</i><span></span></div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <p class="contact-lead">
+              Have a question, an opportunity, or just want to say hi? My inbox is always open.
+              Fill in the form and I'll get back to you.
+            </p>
+            <a class="contact-item" href="https://www.linkedin.com/in/sakshanshukumar/" target="_blank" rel="noopener">
+              <span class="ci-icon"><b>in</b></span>
+              <div><small>LinkedIn</small>linkedin.com/in/sakshanshukumar</div>
+            </a>
+            <a class="contact-item" href="https://github.com/Sakshansh" target="_blank" rel="noopener">
+              <span class="ci-icon"><b>gh</b></span>
+              <div><small>GitHub</small>github.com/Sakshansh</div>
+            </a>
+            <div class="contact-item">
+              <span class="ci-icon"><b>⌖</b></span>
+              <div><small>Location</small>Ghaziabad, Uttar Pradesh, India</div>
+            </div>
+          </div>
+
+          <form id="contactForm" class="contact-form reveal" novalidate>
+            <div class="field">
+              <input type="text" id="name" name="name" placeholder=" " autocomplete="name" />
+              <label for="name">Your Name</label>
+              <small class="error"></small>
+            </div>
+            <div class="field">
+              <input type="email" id="email" name="email" placeholder=" " autocomplete="email" />
+              <label for="email">Your Email</label>
+              <small class="error"></small>
+            </div>
+            <div class="field">
+              <input type="text" id="subject" name="subject" placeholder=" " />
+              <label for="subject">Subject</label>
+              <small class="error"></small>
+            </div>
+            <div class="field">
+              <textarea id="message" name="message" rows="5" placeholder=" " maxlength="500"></textarea>
+              <label for="message">Your Message</label>
+              <small class="error"></small>
+              <span class="char-count"><span id="charCount">0</span>/500</span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            <p class="form-success" id="formSuccess" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Designed &amp; built by <strong>Sakshanshu Kumar</strong> · © <span id="year"></span></p>
+    </div>
+  </footer>
+
+  <button id="toTop" aria-label="Back to top"><b>↑</b></button>
+  <div id="toast" role="status"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
